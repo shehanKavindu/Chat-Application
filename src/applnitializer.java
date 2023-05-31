@@ -9,6 +9,5 @@ public class applnitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-
     }
 }
