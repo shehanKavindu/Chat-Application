@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Point3D?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -8,20 +9,26 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="498.0" prefWidth="705.0" style="-fx-background-color: #d5f4e6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
+<AnchorPane prefHeight="498.0" prefWidth="705.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="14.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="100.0" fitWidth="200.0" layoutX="14.0" layoutY="26.0">
-         <image>
-            <Image url="@../asserts/login%20form.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="498.0" fitWidth="489.0" layoutX="214.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
       <TextField layoutX="14.0" layoutY="281.0" prefHeight="26.0" prefWidth="181.0" />
-      <Button layoutX="47.0" layoutY="330.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="95.0" style="-fx-background-color: #80ced6;" text="Join" textFill="#020f23">
+      <Button layoutX="36.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #cccc33;" text="Join" textFill="#020f23">
          <font>
-            <Font name="System Bold" size="14.0" />
+            <Font name="System Bold" size="15.0" />
          </font>
       </Button>
+      <ImageView fitHeight="44.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0">
+         <image>
+            <Image url="@../asserts/img_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="347.0" fitWidth="428.0" layoutX="234.0" layoutY="69.0">
+         <image>
+            <Image url="@../asserts/img_2.png" />
+         </image>
+      </ImageView>
    </children>
+   <rotationAxis>
+      <Point3D x="1.0" y="1.0" z="1.0" />
+   </rotationAxis>
 </AnchorPane>
