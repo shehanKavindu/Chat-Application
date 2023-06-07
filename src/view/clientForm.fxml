@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.ClientFormController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="498.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="271.0" />
+   </children>
 </AnchorPane>
