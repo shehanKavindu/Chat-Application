@@ -19,12 +19,12 @@
       </Button>
       <ImageView fitHeight="44.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0">
          <image>
-            <Image url="@../asserts/img_1.png" />
+            <Image url="@../asserts/liveChat2.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="347.0" fitWidth="428.0" layoutX="234.0" layoutY="69.0">
          <image>
-            <Image url="@../asserts/img_2.png" />
+            <Image url="@../asserts/Loginform.png" />
          </image>
       </ImageView>
    </children>

@@ -1,10 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="498.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
+<AnchorPane prefHeight="541.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
    <children>
-      <AnchorPane prefHeight="600.0" prefWidth="271.0" />
+      <AnchorPane layoutX="212.0" prefHeight="66.0" prefWidth="494.0" style="-fx-background-color: FFE569;">
+         <children>
+            <ImageView layoutX="12.0" layoutY="8.0">
+               <image>
+                  <Image url="@../asserts/cliet.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelClientName" layoutX="62.0" layoutY="19.0" prefHeight="24.0" prefWidth="110.0" text="Client Name">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-1.0" prefHeight="541.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="542.0" prefWidth="208.0">
+               <children>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="94.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelKavinduShan" layoutX="70.0" layoutY="97.0" prefHeight="24.0" prefWidth="110.0" text="Kavindu Shan">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="144.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelShehan" layoutX="71.0" layoutY="147.0" prefHeight="24.0" prefWidth="110.0" text="Shehan ">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelSapna" layoutX="71.0" layoutY="202.0" prefHeight="24.0" prefWidth="110.0" text="Sapna">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="199.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="257.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelIduwara" layoutX="70.0" layoutY="260.0" prefHeight="24.0" prefWidth="110.0" text="Iduwara">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="308.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelAmarajith" layoutX="70.0" layoutY="311.0" prefHeight="24.0" prefWidth="110.0" text="Amarajith">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="360.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelNamal" layoutX="71.0" layoutY="363.0" prefHeight="24.0" prefWidth="110.0" text="Namal">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="478.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" layoutX="14.0" layoutY="420.0">
+                     <image>
+                        <Image url="@../asserts/cliet.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="labelRanjith" layoutX="70.0" layoutY="423.0" prefHeight="24.0" prefWidth="110.0" text="Ranjith">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelAmalPerera" layoutX="70.0" layoutY="481.0" prefHeight="24.0" prefWidth="110.0" text="Amal Perera">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="44.0" fitWidth="189.0" layoutX="10.0" layoutY="14.0">
+                     <image>
+                        <Image url="@../asserts/liveChat2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ScrollPane layoutX="212.0" layoutY="66.0" prefHeight="427.0" prefWidth="494.0" />
+      <TextField fx:id="txtmsg" layoutX="219.0" layoutY="497.0" prefHeight="30.0" prefWidth="408.0" promptText="Type Here!!!" />
+      <Button layoutX="634.0" layoutY="500.0" mnemonicParsing="false" onAction="#SendOnAction" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: blue;" text="Send">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="597.0" layoutY="505.0">
+         <image>
+            <Image url="@../asserts/camera.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="571.0" layoutY="505.0">
+         <image>
+            <Image url="@../asserts/emoji.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
