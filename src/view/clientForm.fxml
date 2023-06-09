@@ -7,8 +7,8 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="541.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientFormController">
    <children>
@@ -19,7 +19,7 @@
                   <Image url="@../asserts/cliet.png" />
                </image>
             </ImageView>
-            <Label fx:id="labelClientName" layoutX="62.0" layoutY="19.0" prefHeight="24.0" prefWidth="110.0" text="Client Name">
+            <Label fx:id="lblClientName" layoutX="62.0" layoutY="19.0" prefHeight="24.0" prefWidth="110.0" text="Client Name">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
@@ -119,19 +119,22 @@
             </AnchorPane>
          </children>
       </AnchorPane>
-      <ScrollPane layoutX="212.0" layoutY="66.0" prefHeight="427.0" prefWidth="494.0" />
-      <TextField fx:id="txtmsg" layoutX="219.0" layoutY="497.0" prefHeight="30.0" prefWidth="408.0" promptText="Type Here!!!" />
+      <ScrollPane layoutX="212.0" layoutY="66.0" prefHeight="427.0" prefWidth="494.0">
+         <content>
+            <VBox fx:id="vbox" prefHeight="424.0" prefWidth="467.0" />
+         </content></ScrollPane>
+      <TextField fx:id="txtMsg" layoutX="219.0" layoutY="497.0" prefHeight="30.0" prefWidth="408.0" promptText="Type Here!!!" />
       <Button layoutX="634.0" layoutY="500.0" mnemonicParsing="false" onAction="#SendOnAction" prefHeight="26.0" prefWidth="68.0" style="-fx-background-color: blue;" text="Send">
          <font>
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
-      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="597.0" layoutY="505.0">
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="597.0" layoutY="505.0" onMouseClicked="#ImageClickOnAction">
          <image>
             <Image url="@../asserts/camera.jpg" />
          </image>
       </ImageView>
-      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="571.0" layoutY="505.0">
+      <ImageView fitHeight="19.0" fitWidth="20.0" layoutX="571.0" layoutY="505.0" onMouseClicked="#EmojiClickOnAction">
          <image>
             <Image url="@../asserts/emoji.png" />
          </image>

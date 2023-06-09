@@ -8,11 +8,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="498.0" prefWidth="705.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginFormController">
    <children>
-      <TextField layoutX="14.0" layoutY="281.0" prefHeight="26.0" prefWidth="181.0" />
-      <Button layoutX="36.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #cccc33;" text="Join" textFill="#020f23">
+      <TextField fx:id="txtName" layoutX="14.0" layoutY="281.0" prefHeight="26.0" prefWidth="181.0" promptText="You r Name" />
+      <Button layoutX="36.0" layoutY="330.0" mnemonicParsing="false" onAction="#JoinOnAction" prefHeight="30.0" prefWidth="130.0" style="-fx-background-color: #cccc33;" text="Join" textFill="#020f23">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
