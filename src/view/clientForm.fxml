@@ -115,6 +115,7 @@
                         <Image url="@../asserts/liveChat2.png" />
                      </image>
                   </ImageView>
+                  <AnchorPane fx:id="emojiBox" layoutX="146.0" layoutY="290.0" prefHeight="200.0" prefWidth="58.0" />
                </children>
             </AnchorPane>
          </children>

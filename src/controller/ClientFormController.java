@@ -30,6 +30,7 @@ public class ClientFormController extends Thread {
 
     public TextField txtMsg;
     public VBox vbox;
+    public AnchorPane emojiBox;
 
     BufferedReader reader;
     PrintWriter writer;
@@ -37,7 +38,7 @@ public class ClientFormController extends Thread {
 
     private FileChooser fileChooser;
     private File filePath;
-
+    boolean isUsed = false;
     public void initialize() throws IOException {
         String userName=LoginFormController.userName;
         lblClientName.setText(userName);
@@ -178,6 +179,34 @@ public class ClientFormController extends Thread {
     }
 
     public void EmojiClickOnAction(MouseEvent mouseEvent) {
+        if (isUsed){
+            emojiBox.getChildren().clear();
+            isUsed=false;
+            return;
+        }
+        isUsed =true;
+        VBox dialogVbox = new VBox(20);
+        ImageView smile = new ImageView(new Image("asserts/smile.png"));
+        smile.setFitWidth(30);
+        smile.setFitHeight(30);
+        ImageView heart = new ImageView(new Image("asserts/heart.png"));
+        heart.setFitWidth(30);
+        heart.setFitHeight(30);
+        dialogVbox.getChildren().add(heart);
+        ImageView sadFace = new ImageView(new Image("asserts/sad-face.png"));
+        sadFace.setFitWidth(30);
+        sadFace.setFitHeight(30);
+        dialogVbox.getChildren().add(sadFace);
+        smile.setOnMouseClicked(event1 -> {
+            txtMsg.setText(txtMsg.getText() + "\uD83D\uDE0A");
+        });
+        heart.setOnMouseClicked(event1 -> {
+            txtMsg.setText(txtMsg.getText() + "❤");
+        });
+        sadFace.setOnMouseClicked(event1 -> {
+            txtMsg.setText(txtMsg.getText() + " \uD83D\uDE14 ");
+        });
+        emojiBox.getChildren().add(dialogVbox);
     }
 
     public void SendOnAction(ActionEvent actionEvent) {
