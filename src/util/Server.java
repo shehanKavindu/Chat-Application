@@ -22,7 +22,7 @@ public class Server {
             System.out.println("Client Connected");
             ClientHandler clientThread = new ClientHandler(accept, clients);
             clients.add(clientThread);
-            clientThread.start();
+            clientThread.run();
         }
     }
 }
