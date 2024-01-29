@@ -7,6 +7,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 
+import static javafx.application.Application.launch;
+
 public class AppInitializer extends Application {
     public static void main(String[] args) {
         launch(args);
@@ -25,4 +27,5 @@ public class AppInitializer extends Application {
 
     }
 
+}
 }
