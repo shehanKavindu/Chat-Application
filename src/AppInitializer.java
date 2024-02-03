@@ -25,7 +25,7 @@ public class AppInitializer extends Application {
         primaryStage.centerOnScreen();
         primaryStage.show();
 
-    }
+
 }
 }
 
